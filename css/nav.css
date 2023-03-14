@@ -1,0 +1,16 @@
+nav img
+{
+    border-radius: 50%;
+height: 100%;
+}
+nav{
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+    border: collapse 15px; 
+    height: 100px;
+    background-color: darkblue;
+    font-size: x-large;
+    color:aliceblue;
+    display: flex;
+    }
+  

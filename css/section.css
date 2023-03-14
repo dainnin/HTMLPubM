@@ -1,0 +1,21 @@
+section
+{
+        background-color: aqua;
+    float: left;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    font-size: 30px;
+    color: rgb(247, 7, 7);
+    
+    
+}
+section a{
+    font-style:italic;
+    font-family: Gill Sans;
+    font-size: 70%;
+    border: 1;
+    border-style: groove ;
+    border-radius: 15%;
+    border-color: blue;
+    background-color: aquamarine;
+}
