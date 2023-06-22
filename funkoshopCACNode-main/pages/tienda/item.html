@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- link fuentes -->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700&display=swap" rel="stylesheet"> 
+    
+        <!-- link css -->
+        <link rel="stylesheet" href="../../css/reset.css">
+        <link rel="stylesheet" href="../../css/header.css">
+        <link rel="stylesheet" href="../../css/item.css">
+        <link rel="stylesheet" href="../../css/novedades.css"> 
+        <link rel="stylesheet" href="../../css/footer.css">
+        
+    <title>item</title>
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="../../multimedia/branding/logo_light_horizontal.svg" alt="logo">
+
+    <div class="nav__container">
+        <ul class="nav">
+            <li class="nav__item nav__item--submenu">
+                <a class="nav__link" href="#">shop
+                    <img class="nav__icono" src="../../multimedia/icons/Vector.webp" alt="flecha">
+                </a>
+                <ul class="nav__subnav">
+                    <li class="subnav__item"><a class="subnav__link" href="#">coleccion</a></li>
+                    <li class="subnav__item"><a class="subnav__link" href="#">figuras</a></li>
+                </ul>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="#">contacto</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">login</a></li>
+        </ul>
+        <img class="icono" src="../../multimedia/icons/cart-icon.svg" alt="carrito">
+    </div>    
+</header>
+
+<main>
+    <section class="item">
+        <img class="item__imagen" src="../../multimedia/star-wars/baby-yoda-1.webp" alt="bebe yoda">
+        <div class="item__descripcion">
+            <h3 class="descripcion__coleccion">star wars</h3>
+            <h2 class="descripcion__titulo">baby yoda blueball</h2>
+            <p class="descripcion__texto">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
+            <p class="descripcion__precio">$1799,99.-</p>
+            <div class="carrito">
+                <button class="carrito__boton">-</button>
+                <input class="carrito__cantidad" type="text" placeholder="0">
+                <button class="carrito__boton">+</button>
+                <button class="carrito__comprar">Agregar al Carrito</button>
+            </div>
+            <p class="pagos__texto"><a class="pagos__link" href="#">Ver métodos de pagos</a> - 3 cuotas sin interés</p>
+        </div>
+    </section>
+
+    <section class="novedades">
+        <h2 class="novedades__titulo">productos relacionados</h2>
+        <div class="novedades__contenedor">
+            <button class="novedades__flecha novedades__flecha--izquierda"><img class="flecha flecha--izquierda" src="../../multimedia/icons/Vector-1-_Stroke_.webp" alt="flecha"></button>
+            <div class="novedades__card">
+                <p class="card__etiqueta">nuevo</p>
+                <img src="../../multimedia/star-wars/trooper-1.webp" alt="trooper" class="card__imagen">
+                <div class="card__descripcion">
+                    <p class="card__coleccion">star wars</p>
+                    <h4 class="card__item">STORMTROOPER LIGHTSABER</h4>
+                    <p class="card__precio">$ 1799,99.-</p>
+                    <p class="card__pago">3 cuotas sin interés</p>
+                </div>
+            </div>
+            <div class="novedades__card">
+                <p class="card__etiqueta">nuevo</p>
+                <img src="../../multimedia/pokemon/pidgeotto-1.webp" alt="pidgeotto" class="card__imagen">
+                <div class="card__descripcion">
+                    <p class="card__coleccion">pokemon</p>
+                    <h4 class="card__item">PIDGEOTTO</h4>
+                    <p class="card__precio">$ 1799,99.-</p>
+                    <p class="card__pago">3 cuotas sin interés</p>
+                </div>
+            </div>
+            <div class="novedades__card">
+                <p class="card__etiqueta">nuevo</p>
+                <img src="../../multimedia/harry-potter/luna-1.webp" alt="luna" class="card__imagen">
+                <div class="card__descripcion">
+                    <p class="card__coleccion">harry potter</p>
+                    <h4 class="card__item">LUNA LOVEGOOD LION MASK</h4>
+                    <p class="card__precio">$ 1799,99.-</p>
+                    <p class="card__pago">3 cuotas sin interés</p>
+                </div>
+            </div>
+            <button class="novedades__flecha novedades__flecha--derecha"><img class="flecha flecha--derecha" src="../../multimedia/icons/Vector-1-_Stroke_.webp" alt="flecha"></button>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__contenedor">
+        <ul class="footer__lista">
+            <li class="footer__item"><a class="footer__link" href="#">shop</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">registrarse</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">ingresar</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">contacto</a></li>
+        </ul>
+        <img class="footer__imagen" src="../../multimedia/branding/isotype.svg" alt="logo footer">
+    </div>
+    <p class="footer__derechos">All rights reserved 2022 - Funkoshop &copy;</p>
+</footer>
+
+</body>
+</html>

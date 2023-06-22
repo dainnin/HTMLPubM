@@ -1,0 +1,131 @@
+.crear__contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5rem;
+}
+
+.crear__titulo {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 4.2rem;
+    margin-bottom: 2rem;
+}
+
+.crear__formulario {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.bloque__categoria {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.form__label {
+    width: 20%;
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+.form__select {
+    width: 25%;
+    height: 3rem;
+    color: #B9B9B9;
+    background: #F5F5F5;
+    border: 2px solid #30343F;
+    border-radius: 6px;
+    padding: 0.2rem;
+}
+
+.form__input {
+    width: 50%;
+    height: 3rem;
+    color: #B9B9B9;
+    background: #F5F5F5;
+    border: 2px solid #30343F;
+    border-radius: 6px;
+    padding: 0.2rem;
+}
+
+.bloque__nombre {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.form__label--nombre {
+    text-transform: none;
+    width: 30%;
+}
+
+.input__margin--bottom {
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid var(--colorDetalles);
+    background-color: #FFFFFF;
+}
+
+.form__textarea {
+    margin-bottom: 2rem;
+    border: 1px solid #1F1F1F;
+    border-radius: 4px;
+    padding: 0.2rem;  
+}
+
+.bloque__precio {
+    width: 80%;
+    /* display: flex;
+    justify-content: space-between; */
+    margin-bottom: 2rem;
+}
+
+.form__label--sku {
+    text-transform: uppercase;
+}
+
+.form__label--precio, .form__label--stock {
+    margin-left: 2rem;
+}
+
+.sku {
+    width: 20%;
+    text-align: center;
+
+}
+
+.precio {
+    width: 15%;
+    text-align: center;
+    /* margin-right: 2rem; */
+}
+
+.stock {
+    width: 5%;
+    text-align: center;
+}
+
+.bloque__descuento {
+    width: 80%;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+
+.descuento {
+    width: 5%;
+    text-align: center;
+}
+
+.form__label--cuotas {
+    margin-left: 2rem;
+}
+
+.bloque__archivos {
+    width: 80%;
+    margin-bottom: 2rem;
+}

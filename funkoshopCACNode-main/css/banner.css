@@ -1,0 +1,66 @@
+.banner {
+    width: 100%;
+    height: 400px;
+    /* display: flex; */
+    top: 0;
+   
+}
+
+.banner::before {
+    content:'';
+    background-image: url('../multimedia/funkos-banner.webp');
+    background-repeat: no-repeat;
+    filter:blur(2px);
+    width: 100dvw;
+    height: 400px;
+    background-size: cover;
+    position: absolute;
+   
+    /* margin: -1px; */
+
+}
+
+/* .banner__imagen {
+    background: url('../multimedia/funkos-banner.webp');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+} */
+
+.banner__descripcion {
+    width: 50%;
+    
+    display: inline-block;
+    position: relative;
+    margin-left: 6rem;
+    margin-top: 5rem;
+   
+  
+   
+}
+
+.banner__titulo {
+    text-transform: capitalize;
+    color: var(--colorTexto);
+    margin: 0;
+    font-size: 3rem;
+}
+
+.banner__texto {
+    color: var(--colorTexto);
+    font-size: 2rem;
+    margin-top: 7px;
+    margin-bottom: 30px;
+}
+
+.banner__boton {
+    width: 50dvb;
+   
+    font-size: 1.5rem;
+    background-color: var(--colorTexto);
+    border: none;
+    border-radius: 50px;
+    padding: 0.4rem;
+    text-transform: uppercase;
+}

@@ -1,0 +1,28 @@
+.header__admin{
+    width: 100%;
+    height: 10vh;
+    color: var(--colorTexto);
+    background-color: var(--colorFondo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 25%;
+    padding-left: 4rem;
+}
+
+.nav__container {
+    display: inline-block;
+    padding-right: 4rem;
+    justify-content: space-between
+}
+
+
+.nav__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--colorTexto);
+    font-size: 1.5rem;
+}

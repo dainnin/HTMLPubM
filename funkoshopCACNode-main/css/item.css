@@ -1,0 +1,94 @@
+.item {
+    width: 100%;
+    padding: 4rem 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.item__imagen {
+    width: 50%;
+}
+
+.item__description {
+    width: 50%;
+    font-family: var(--fuenteSecundaria);
+}
+
+.descripcion__coleccion {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+
+}
+
+.descripcion__titulo {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+}
+.descripcion__texto {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.descripcion__precio {
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.carrito {
+    width: 50%;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.carrito__boton {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 2rem;
+    text-align: center;
+    border: none;
+    background-color: #4F4F4F;
+    color: var(--colorTexto)
+}
+
+.carrito__cantidad {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 2rem;
+    text-align: center;
+    border: 0.5px solid #C9C9C9;
+}
+
+.carrito__comprar {
+    text-align: center;
+    background-color: var(--colorDetalles);
+    color: var(--colorTexto);
+    font-weight: 400;
+    border: none;
+    padding: 0.5rem;
+}
+.pagos {
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: flex;
+}
+
+.pagos__texto {
+    color: var(--colorTexto4);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.pagos__link {
+    color: var(--colorTexto4);  
+    text-transform: lowercase;
+}

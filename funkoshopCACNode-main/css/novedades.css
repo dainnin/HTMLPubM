@@ -1,0 +1,127 @@
+
+.novedades {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 15fr 2fr;
+    grid-template-areas: ". xx ." ". xc .";
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.novedades__titulo {
+    width: 95%;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    grid-area: xx;
+    text-align: center;
+
+}
+
+.novedades__contenedor {
+    grid-area: xc;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    overflow-x: scroll;
+    z-index: -1;
+    height: 450px;
+    box-sizing: border-box;
+}
+
+.novedades__flecha {
+    width: 36px;
+    height: 37px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.17);
+    border-radius: 4px;
+    z-index: 2;
+}
+
+.flecha {
+    width: 9px;
+    height: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+.novedades__flecha--izquierda {
+    position: absolute;
+    left: 36px;
+}
+
+.flecha--izquierda {
+    transform: rotate(180deg);
+}
+
+.novedades__flecha--derecha {
+    position: absolute;
+    right: 36px;
+}
+
+.card__link {
+    width: calc(90% / 3);
+    text-decoration: none;
+    color: var(--colorTexto3);
+}
+
+.novedades__card {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    margin-bottom: 2rem;
+    width: 245px;
+    height: 450px;
+}
+
+.card__etiqueta {
+    width: 20%;   
+    padding: 1rem 0;
+    left: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: var(--fuenteSecundaria);
+    color: var(--colorTexto);
+    background-color: var(--colorDetalles);
+}
+                    
+.card__imagen {
+    width: 100%;
+}
+
+.card__descripcion {
+    width: 100%;
+    font-family: var(--fuenteSecundaria);
+    text-align: start;
+}
+
+.card__coleccion  {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.card__item {
+    margin-bottom: 1rem;
+}
+
+.card__precio {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card__pago {
+    color: var(--colorTexto4);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+

@@ -1,0 +1,50 @@
+:root {
+    --colorTexto: #FFFFFF;
+    --colorTexto2: #111111;
+    --colorTexto3: #333333;
+    --colorTexto4: #1D84B5;
+    --colorFondo: #30343F;
+    --colorDetalles: #FF3333;
+
+    --fuentePrincipal:'Raleway', sans-serif; 
+    --fuenteSecudaria: 'Inter', sans-serif;
+}
+
+* {
+   overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuentePrincipal);
+}
+
+html {
+    
+    font-size: 62.5%; /* 10px */
+}
+
+.shop__main {
+    display: flex;
+    width: 100%;
+}
+body{
+    display: grid;
+    grid-template-areas: "ax"
+    "bx"
+    "cx";
+
+}
+body header{
+    grid-area: ax;
+    
+}
+body main{
+    grid-area: bx;   
+}
+body footer{
+    grid-area: cx;
+    
+}
+/* * {
+    border: 1px solid red;
+} */

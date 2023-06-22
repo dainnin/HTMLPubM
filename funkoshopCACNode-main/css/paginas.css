@@ -1,0 +1,24 @@
+.paginas {
+    display: inline-block;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.boton {
+    width: 44px;
+    height: 44px;
+    font-family: var(--fuentSecundaria);
+    font-weight: 700;
+    background-color: var(--colorTexto);
+    border: 1px solid #DFE3E8;
+    text-align: center;
+}
+
+.boton.pagina:hover {
+    color:var(--colorDetalles);
+    border: 1px solid var(--colorDetalles);
+}
+
+.flecha--izquierda {
+    transform: rotate(180deg);
+}

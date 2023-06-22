@@ -1,0 +1,69 @@
+.colecciones {
+    width: 100%;
+    display: grid;
+    
+    grid-template-areas: ". . .";
+    grid-template-rows: 400px  auto;
+  
+    grid-template-columns:  2fr 20fr 2fr;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.coleccion {
+        
+display: flex;
+    grid-column-start:2;
+    grid-column-end: 3;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.coleccion--reverse {
+    flex-direction: row;
+}
+
+.coleccion__imagen {
+    
+    height: calc(100px + 55dvb);
+}
+
+.coleccion__descripcion {
+    width: 50dvw;
+
+}
+
+.descripcion__titulo {
+    width: 65%;
+    text-transform: uppercase;
+    font-size: calc(1.2rem + 2vw);
+    color: var(--colorTexto2);
+    font-weight:700;
+    overflow: visible;
+}
+
+.descripcion__texto {
+    width: 80%;
+    color: var(--colorTexto3);
+    font-size: calc(1rem + 1vw);
+    font: weight 300px;;
+    margin-bottom: 1rem;
+}
+
+.descripcion__linea {
+    width: 40dvw;
+    border: 1px solid var(--colorDetalles);
+}
+
+.descripcion__boton {
+    width: 25dvw;
+    text-transform: uppercase;
+    color: var(--colorTexto);
+    background-color: var(--colorFondo);
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    border: none;
+    margin-top: 3rem;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LINK FUENTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700&display=swap" rel="stylesheet"> 
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/admin/headerAdmin.css">
+    <link rel="stylesheet" href="../../css/admin/admin.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+
+    <title>admin</title>
+</head>
+<body>
+    <header class="header__admin">
+        <img class="logo" src="../../multimedia/branding/logo_light_horizontal.svg" alt="logo">
+
+    <div class="nav__container">
+        <a class="nav__link" href="#">salir</a>
+    </div>    
+</header>
+    
+<main>
+    <div class="busqueda">
+        <img  class="busqueda__icono" src="../../multimedia/icons/search_icon.svg" alt="lupa">
+        <input class="busqueda__input" type="search" name="" id="" placeholder="código, nombre o categoria">
+    </div>
+
+    <section class="listado">
+        <div class="listado__encabezado">
+            <h2 class="listado__titulo">listado de productos</h2>
+            <form class="listado__agregar" action="">
+                <label class="listado__label" for="">agregar</label>
+                <button class="listado__boton" type="submit">+</button>
+            </form>
+        </div>
+
+        <table class="tabla">
+            <tr class="tabla__row">
+                <th class="tabla__cabecera">ID</th>
+                <th class="tabla__cabecera">codigo</th>
+                <th class="tabla__cabecera">nombre del producto</th>
+                <th class="tabla__cabecera">categoria</th>
+                <th class="tabla__cabecera" class="editar"></th>
+                <th class="tabla__cabecera" class="eliminar"></th>
+            </tr>
+            <tr class="tabla__row">
+                <td class="tabla__datos"></td>
+                <td class="tabla__datos"></td>
+                <td class="tabla__datos"></td>
+                <td class="tabla__datos"></td>
+                <td class="tabla__datos"><img src="../../multimedia/icons/edit_pencil.svg" alt=""></td>
+                <td class="tabla__datos"><img src="../../multimedia/icons/delete_trash.svg" alt=""></td>
+            </tr>
+        </table>
+    </section>
+    
+
+    
+</main>
+
+<footer class="footer">
+    <div class="footer__contenedor">
+        <ul class="footer__lista">
+            <li class="footer__item"><a class="footer__link" href="#">shop</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">registrarse</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">ingresar</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">contacto</a></li>
+        </ul>
+        <img class="footer__imagen" src="../../multimedia/branding/isotype.svg" alt="logo footer">
+    </div>
+    <p class="footer__derechos">All rights reserved 2022 - Funkoshop &copy;</p>
+</footer>  
+</body>
+</html>
