@@ -1,0 +1,26 @@
+@media only screen and (max-width: 750px) {   
+    nav{
+        justify-items: center;
+       grid-template-rows: 15px min-content 12px;
+        grid-template-columns: 1fr;
+        
+    }
+    nav>img{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+       
+        width: 67vw;
+        height: 30px;
+        
+    }
+    nav>div{
+       margin: 0px;
+       margin-top: 10px;
+        grid-row-start: 3;
+        grid-row-end: 4;
+         grid-column-start: 1;
+    }
+    nav>div ul{
+        margin: 0px;}
+}

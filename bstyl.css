@@ -1,35 +1,47 @@
 :root{
-    --navColor: rgba(12, 0, 80, 0.743);
-    --radi: 15px 15px 45px;
+    --navColor: rgba(90, 79, 116, 0.589);
+    --navColor2: rgba(0, 236, 197, 0.743);
+    --radi: 15px 15px calc(4vw + 55px) ;
 }
 *{
        text-transform: capitalize;
     }
+    a{
+    text-decoration: none;  
+    }
+    a:link{
+    color: red;  
+    }
+    a:visited{
+  color: red;
+    }
 body{
     display: grid;
     grid-template-areas: 'a a a''b b c''d d d';
-   background-image: url("https://cdn.eldoce.tv/sites/default/files/styles/site_nota_slider_preview/public/3%20Villa%20general%20belgrano%20-%20c%C3%B3rdoba.jpg?itok=MuHZftYZ");
-    background-size: 99vw;
-    background-repeat: no-repeat;
-    background-position: center;
 
+background: linear-gradient( 87deg, rgb(66, 55, 109), rgba(243, 11, 11, 0.808));
 }
 nav{
-   
+    
     margin: 0 0 1vw ;
     position: fixed;
+    top:0;
+    left:1vw;
+    right:1.5vw;
+    bottom:3vw;
     display: grid;
     grid-area: a;
     background-color: var(--navColor);
     border-radius: var(--radi) ;
-    border: solid transparent;
-    width: 94%;
+    border: 0px solid transparent;
+    width: 98%;
     height: calc(35px + 10vw);
-    grid-template-rows: 1fr auto 1fr;
+    grid-template-rows: 5% auto 5%;
     grid-template-columns: 1fr auto 1fr;
     
 }
 nav>img{
+
     grid-row-start: 2;
     grid-column-start: 1;
     border-radius: var(--radi);
@@ -42,28 +54,37 @@ nav>div{
      grid-column-start: 3;
 }
 nav  ul{
+ 
     display: inline-block;
     height: 30px;
-    overflow: visible;
     position: relative;
-     list-style-type: none;
+    list-style-type: none;
     width: min-content;
+    overflow: visible;
+    padding: 0%;
+    padding-right: 15px;
 }
 nav h1{
-   
+    font-size: calc(7px + 1.25vw) ;
     margin: 0px 0px 0px 0px;}
 nav  ul  li{
+    font-size: calc(1px + 1.25vw) ;
     box-sizing: content-box;
     width: 150% ;
     visibility: collapse;
     background-color: var(--navColor);
+
 }
-ul:hover  li{visibility: visible;}
+ul:hover  li{
+    
+    visibility: visible;}
+    
 h1{ 
     animation-duration: 3s;
     animation-name: slidein;
     text-shadow: 3px 3px 1px rgba(0, 0, 255,0.5);
 }
+
 
   
   @keyframes slidein {
