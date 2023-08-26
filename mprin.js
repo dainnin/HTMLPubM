@@ -1,0 +1,2 @@
+document.getElementById('lonav').setAttribute('src',"http://palabraygracia.com/wp-content/uploads/2021/09/20210901-EELI-La-redenci%C3%B3n-Qu%C3%A9-es-y-qu%C3%A9-significa-ART.png")
+document.getElementById('vidio').setAttribute('src', "https://www.youtube.com/embed/PJ8Rz8KPmFc?si=9-Ldcu87o5vlVc-h")
