@@ -6,10 +6,9 @@ const getId =(x)=> document.getElementById(x);
 
 const csl=console.log;
 
-/* document.getElementById('lonav').setAttribute('src',"")
- */
-getId('vidio').setAttribute('src', "https://www.youtube.com/embed/PJ8Rz8KPmFc?si=9-Ldcu87o5vlVc-h")
 
+/* getId('vidio').setAttribute('src', "https://www.youtube.com/embed/PJ8Rz8KPmFc?si=9-Ldcu87o5vlVc-h")
+ */
 function navPag(){
     const navJson=async()=>{
         try {
@@ -22,12 +21,12 @@ function navPag(){
     }
  const contMenu = document.createElement('div');
  const navIns=getTag('nav')[0];
- navIns.innerHTML=navIns.innerHTML+`<img class='navimg' id="lonav"  src='https://img.milanuncios.com/fg/3576/40/357640980_1.jpg?VersionId=xcsIoF7w7ruuOmBMYuwwfBD1AbyzLkyE'></img>`
+ navIns.innerHTML=navIns.innerHTML+`<input onchange="esconder()" type="checkbox"  id="menHidden"> <img class='navimg' id="lonav"  src='https://img.milanuncios.com/fg/3576/40/357640980_1.jpg?VersionId=xcsIoF7w7ruuOmBMYuwwfBD1AbyzLkyE'></img>`
     navJson().then((navItems)=>{
 
 for (const raiz in navItems){
  const underList = document.createElement('ul');
-/*  underList.setAttribute('class','menHidden') */
+
  underList.innerHTML=underList.innerHTML + `<h1>${raiz}</h1>`;
  for(const liElemt of navItems[raiz]){
     underList.innerHTML=underList.innerHTML + `<li><a href="#" target="_blank">${liElemt}</a></li>`
@@ -39,6 +38,35 @@ navIns.appendChild(contMenu)
 
 };
 navPag();
+
+
+
+
+function mainElem(){
+
+    const mainimgJson=async()=>{
+    try {
+    const resp= await fetch('./imgList.json');
+const obj=  await resp.json();
+return obj;
+     } catch (error) {
+        
+    }
+
+}
+mainimgJson().then((imgItems)=>{
+for (const raiz of imgItems[Object.keys(imgItems)]){
+   const linkImg= document.createElement('a');
+   linkImg.innerHTML=`<img src='./web/${raiz}'>`;
+   document.getElementsByTagName("main")[0].appendChild(linkImg)
+   
+}
+})
+
+}
+
+
+mainElem()
 function esconder(){
     if (getId('menHidden').checked===true) {
         getTag('nav')[0].setAttribute('class','navimgHidden')
@@ -55,31 +83,6 @@ function esconder(){
    
      ulEle.setAttribute('class','')
     }}
-
+    
 }
-      /*   <div>
-            <ul><h1>asd</h1>
-                <li><a href="#vidio">asdasd</a></li>
-                <li><a href="https://google.com.ar" target="_blank">Google</a></li>
-                <li><a href="#">asdasd</a></li>
-                <li><a href="#">asdasd</a></li>
-            </ul>
-            <ul><h1>contacto</h1>
-                <li><a href="#vidio">asdasd</a></li>
-                <li><a href="https://google.com.ar" target="_blank">Google</a></li>
-                <li><a href="#">asdasd</a></li>
-                <li><a href="#">asdasd</a></li>
-            </ul>
-            <ul><h1>contacto</h1>
-                <li><a href="#vidio">asdasd</a></li>
-                <li><a href="https://google.com.ar" target="_blank">Google</a></li>
-                <li><a href="#">asdasd</a></li>
-                <li><a href="#">asdasd</a></li>
-            </ul>
-            <ul><h1>contacto</h1>
-                <li><a href="#vidio">asdasd</a></li>
-                <li><a href="https://google.com.ar" target="_blank">Google</a></li>
-                <li><a href="#">asdasd</a></li>
-                <li><a href="#">asdasd</a></li>
-            </ul>
-        </div> */
+      

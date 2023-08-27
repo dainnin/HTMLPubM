@@ -122,15 +122,21 @@ h1{
     }
   }
 main{
-
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: calc(144px + 6.5vw) 3vw 3vw 3vw ;
     grid-area: b;
 
 }
-main>iframe{
+/* main>iframe{
     width: calc((100vw / 3 * 2) - 6vw);
     height: calc((100vw / 3 * 2 / 16 * 9) - 6vw) ;
-}
+} */
+main  a > img{
+    
+width: 12.50dvw;
+} 
 section{
     margin: calc(144px + 6.5vw) 3vw 3vw 3vw ;
     grid-area: c;
