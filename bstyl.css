@@ -37,23 +37,34 @@ nav{
     width: 98%;
     height: calc(35px + 10vw);
     grid-template-rows: 5% auto 5%;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: 2fr auto 1fr auto 2fr;
     
 }
-nav>img{
+  
+nav #menHidden{
+    grid-column-start: 6;
+    width: calc( 10px + 1vw );
+    height: calc( 10px + 1vw );
+     }
+     .menHidden{visibility: collapse;}
+.navimg{
 
     grid-row-start: 2;
-    grid-column-start: 1;
+    grid-column-start: 2;
     border-radius: var(--radi);
-    
     width: 27vw;
     height:calc(35px + 10vw - 20px);
+}
+.navimgHidden{
+
+    grid-row-start: 1;
+    height:calc(30px);
 }
 nav>div{
     justify-self: flex-end;
     margin: calc((35px + 5vw)/2) 10vw 0px 0px ;
     grid-row-start: 2;
-     grid-column-start: 3;
+     grid-column-start: 4;
 }
 nav > div  ul{
  

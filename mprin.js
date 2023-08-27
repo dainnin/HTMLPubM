@@ -22,14 +22,15 @@ function navPag(){
     }
  const contMenu = document.createElement('div');
  const navIns=getTag('nav')[0];
- navIns.innerHTML=navIns.innerHTML+`<img id="lonav"  src='https://img.milanuncios.com/fg/3576/40/357640980_1.jpg?VersionId=xcsIoF7w7ruuOmBMYuwwfBD1AbyzLkyE'></img>`
+ navIns.innerHTML=navIns.innerHTML+`<img class='navimg' id="lonav"  src='https://img.milanuncios.com/fg/3576/40/357640980_1.jpg?VersionId=xcsIoF7w7ruuOmBMYuwwfBD1AbyzLkyE'></img>`
     navJson().then((navItems)=>{
 
 for (const raiz in navItems){
  const underList = document.createElement('ul');
+/*  underList.setAttribute('class','menHidden') */
  underList.innerHTML=underList.innerHTML + `<h1>${raiz}</h1>`;
  for(const liElemt of navItems[raiz]){
-    underList.innerHTML=underList.innerHTML + `<li>${liElemt}</li>`
+    underList.innerHTML=underList.innerHTML + `<li><a href="#" target="_blank">${liElemt}</a></li>`
  } 
  contMenu.appendChild(underList);  
 }
@@ -37,8 +38,25 @@ navIns.appendChild(contMenu)
 })
 
 };
-navPag()
+navPag();
+function esconder(){
+    if (getId('menHidden').checked===true) {
+        getTag('nav')[0].setAttribute('class','navimgHidden')
+        getTag('nav')[0].getElementsByTagName('img')[0].setAttribute('class','navimgHidden')
+       for(const ulEle of getTag('nav')[0].getElementsByTagName('ul')){
+       
+        ulEle.setAttribute('class','menHidden')
+       } 
 
+    }else {
+        getTag('nav')[0].setAttribute('class','')
+        getTag('nav')[0].getElementsByTagName('img')[0].setAttribute('class','navimg')
+    for(const ulEle of getTag('nav')[0].getElementsByTagName('ul')){
+   
+     ulEle.setAttribute('class','')
+    }}
+
+}
       /*   <div>
             <ul><h1>asd</h1>
                 <li><a href="#vidio">asdasd</a></li>
