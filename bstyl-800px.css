@@ -9,12 +9,14 @@
         grid-row-start: 2;
         grid-row-end: 3;
         grid-column-start: 1;
-       
+       background-image: cover;
+       background-position: 90% ;
         width: 67vw;
-        height: 30px;
+        height: calc(10vw - 5px);
         
     }
     nav>div{
+        justify-self: center;
        margin: 0px;
        margin-top: 10px;
         grid-row-start: 3;
@@ -22,5 +24,6 @@
          grid-column-start: 1;
     }
     nav>div ul{
-        margin: 0px;}
+        margin: 0px;
+}
 }
