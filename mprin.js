@@ -37,7 +37,7 @@ navIns.appendChild(contMenu)
 })
 
 };
-
+navPag()
 
       /*   <div>
             <ul><h1>asd</h1>
