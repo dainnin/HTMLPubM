@@ -29,6 +29,7 @@
          grid-column-start: 1;
     }
     nav>div ul{
+        height:calc(5px + 1.5vw);
         margin: 0px;
 }
 }
