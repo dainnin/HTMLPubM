@@ -1,0 +1,146 @@
+:root{
+    --semiCuaW:calc(calc(200px + 5vw));
+    --semiCuaH:calc(calc(200px + 5vw)/16*11.85);
+    --vRectW: calc(calc(250px + 5vw)/19*16);
+    --vRectH: calc(250px + 5vw);
+    --ShadowBoxB:linear-gradient( 135deg, rgb(238, 238, 238), rgb(255, 255, 255));;
+    --ShadowBox: drop-shadow(3px 3px 5px rgba(128, 128, 128, 0.784));
+    --RouseEspecial: rgb(255, 1, 79);
+    --GreyEspecial: rgb(80, 80, 80, 0.2);
+    --WhiteSpecial:rgb(236, 240, 243);
+    --MenuFontS: calc(4px + 0.75vw)
+}
+
+    .menu{
+        padding: 0;
+        text-transform: uppercase;
+        list-style: none;
+        user-select: none;
+       
+       
+    }
+    .menu :link,.menu :any-link{
+        text-decoration: none;
+        color:initial;
+    }
+    .menu * * {
+        display: block;
+        padding: 0 2vw;
+        
+    }
+
+    .menu,
+    .menu * *{
+        
+        
+        margin: 0;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .menu * > *:hover {
+
+        border-radius: 15px;
+        background: linear-gradient(145deg, rgba(255, 255, 255, 0.73), rgb(255, 255, 255));
+        filter: drop-shadow(1px 2px 5px rgb(63, 63, 63, 0.8));
+        
+
+    }
+    .desplazar7{
+  background: var(--ShadowBoxB);
+   position: relative;
+   left: 7px;
+   top:7px;
+    border-radius: 15px;
+   filter: drop-shadow(3px 3px 5px rgba(128, 128, 128, 0.784));
+ }
+.desplazarB{
+    background-color: rgb(231, 113, 113);
+    border-radius: 15px;
+   }
+   .maxSizeCont{
+    width: max-content;
+    height: max-content;
+   }
+   .menuHidden > :first-child {
+    display: none;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes abrir {
+    0% {
+        max-height: 100px;
+    }
+
+    100% {
+        max-height: 125px;
+    }
+}
+
+
+@media screen and (max-width:1020px) {
+
+   
+    .menuHidden{
+        display: block;
+        text-align: center;
+        height:calc(7vw - 22px);
+        padding-top: 7vw;
+        overflow: visible;
+        z-index: 100;
+        animation-name: abrir;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        
+    }
+    
+    .menuHidden > :first-child:only-child,
+    .menuHidden  * {
+       background-color: rgb(153, 153, 153);
+       width: 102w;
+       visibility: collapse;
+       text-align: center;
+    }
+   
+    .menuHidden  *  * {
+        font-size: large;
+        width: 102vw !important;
+    }
+    
+    .menuHidden>:first-child {
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        background-color: var(--FondoHeader);
+        visibility: visible !important;
+        font-weight: bold !important;
+        font-size: larger !important;
+        text-align: center;
+        animation-name: none !important;
+                
+    }
+
+   
+   
+    .menuHidden:hover * {
+        animation-name: aparecer;
+        animation-duration: 2s;
+        visibility: visible;
+    }
+
+}
