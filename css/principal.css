@@ -48,7 +48,7 @@ button {
 
 p,
 label {
-    font-size: calc(10px + 0.5vw);
+    font-size: calc(14px + 0.5vw);
     font-weight: 400;
     color: rgb(80, 80, 80);
 }
