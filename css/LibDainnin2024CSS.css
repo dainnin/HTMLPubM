@@ -9,6 +9,7 @@
     --GreyEspecial: rgb(80, 80, 80, 0.2);
     --WhiteSpecial:rgb(236, 240, 243);
     --MenuFontS: calc(4px + 0.75vw)
+    --BackBodyW:  rgb(232, 236, 239);
 }
 
     .menu{
