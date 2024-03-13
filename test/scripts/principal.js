@@ -4,7 +4,7 @@ const urlComponents=location.origin+'/HTMLPubM/test/ProgramacionWebI/componentes
 
 const arrais={
 clase1:['clase1'],
-test:['test'],
+test:['clase2'],
 
 }
 let position=0;
