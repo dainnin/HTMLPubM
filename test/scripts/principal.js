@@ -1,6 +1,6 @@
 console.time('cElement-Time')
 
-const urlComponents=location.origin+'/Davinci/ProgramacionWebI/componentes/';
+const urlComponents=location.origin+'HTMLPubM/test/componentes/';
 
 const arrais={
 clase1:['clase1'],
