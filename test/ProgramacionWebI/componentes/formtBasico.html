@@ -1,0 +1,129 @@
+
+
+<main id="content" class="main-content  ">
+    <article class="main-page-content" lang="es">
+        <header>
+            <h1>Estructura web y documentación</h1>
+        </header>
+        <div class="section-content">
+            
+           
+          
+        </div>
+        <section aria-labelledby="partes_básicas_de_un_documento">
+            <h2 id="partes_básicas_de_un_documento"><a href="#partes_básicas_de_un_documento">Partes básicas de un
+                    documento</a></h2>
+            <div class="section-content">
+                <p>Las páginas web pueden y se deben diferenciar las unas de las otras, pero todas tienden a contener
+                    elementos comunes parecidos, a menos que estén destinadas a mostrar un vídeo o un juego a pantalla
+                    completa, o que formen parte de un proyecto artístico concreto o, simplemente, que estén mal
+                    estructuradas; estos elementos comunes son:</p>
+                <dl>
+                    <dt id="encabezado"><a href="#encabezado">encabezado:</a></dt>
+                    <dd>
+                        <p>Normalmente formado por una gran franja que cruza la parte superior de la página con un
+                            <strong>gran título</strong>, un logotipo y quizás un lema. Esta parte suele permanecer
+                            invariable mientras navegas entre las páginas de un mismo sitio web.</p>
+                    </dd>
+                    <dt id="barra_de_navegación"><a href="#barra_de_navegaci%C3%B3n">barra de navegación:</a></dt>
+                    <dd>
+                        <p>Son los enlaces a las secciones principales del sitio web. Normalmente está formada por un
+                            menú con botones, enlaces o pestañas. Al igual que el <em>encabezado</em>, este contenido
+                            suele permanecer invariable en las diferentes páginas del sitio; tener un menú inconsistente
+                            en tu página web conducirá a los usuarios a la confusión y frustración. Muchos diseñadores
+                            web consideran que el menú de navegación forma parte del encabezado y que no posee un
+                            componente individual, aunque no es necesario que sea así; de hecho, algunos argumentan que
+                            tener ambos componentes por separado es mejor por motivos de <a
+                                href="/es/docs/Learn/Accessibility">accesibilidad</a> porque los lectores de pantalla
+                            pueden leer mejor ambos elementos si están separados.</p>
+                    </dd>
+                    <dt id="contenido_principal"><a href="#contenido_principal">contenido principal:</a></dt>
+                    <dd>
+                        <p>Es la gran parte central de la página y contiene la mayor parte del contenido particular de
+                            una página web concreta; por ejemplo, el video que quieres ver, la narración que quieres
+                            leer, el mapa que quieres consultar, los titulares de las noticias, etc. ¡Esta es la parte
+                            que definitivamente debe variar mucho de una página a otra de tu sitio web!</p>
+                    </dd>
+                    <dt id="barra_lateral"><a href="#barra_lateral">barra lateral:</a></dt>
+                    <dd>
+                        <p>Suele incluir algún tipo de información adicional, enlaces, citas, publicidad, etc.
+                            Normalmente está relacionada con el contenido principal de la página (por ejemplo, en una
+                            página de noticias, la barra lateral podría contener la biografía del autor o enlaces a
+                            artículos relacionados), pero en otras ocasiones encontraras elementos recurrentes como un
+                            menú de navegación secundario.</p>
+                    </dd>
+                    <dt id="pie_de_página"><a href="#pie_de_p%C3%A1gina">pie de página:</a></dt>
+                    <dd>
+                        <p>Es la parte inferior de la página, que generalmente contiene la letra pequeña, el copyright o
+                            la información de contacto. Es el sitio donde se coloca la información común (al igual que
+                            en el encabezado), pero esta información no suele ser tan importante o es secundaria con
+                            respecto a la página en sí misma. El pie también se suele usar para propósitos <a
+                                href="/es/docs/Glossary/SEO">SEO</a>, e incluye enlaces de acceso rápido al contenido
+                            más popular.</p>
+                    </dd>
+                </dl>
+                <p>Una página web «típica» se podría parecer a esta:</p>
+                <p>
+                    <img src="https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure/sample-website.png"
+                        alt="Un ejemplo de estructura de sitio web simple con un encabezado principal, menú de navegación, contenido principal, barra lateral y pie de página."
+                        width="1298" height="855" loading="lazy">
+                </p>
+            </div>
+        </section>
+        <section aria-labelledby="html_para_dar_estructura_al_contenido">
+            <h2 id="html_para_dar_estructura_al_contenido"><a href="#html_para_dar_estructura_al_contenido">HTML para
+                    dar estructura al contenido</a></h2>
+            <div class="section-content">
+                <p>El ejemplo no es muy atractivo, pero puede servir para ilustrar un ejemplo de diseño de una página
+                    web típica. Puedes encontrar sitios con más columnas, algunas mucho más complejas, pero esta servirá
+                    para hacerte una idea general sobre el tema. Con el CSS adecuado podrás usar muchos más elementos
+                    para decorar las distintas secciones y conseguir que queden como deses, pero como se comentó
+                    anteriormente, necesitas respetar ciertas normas semánticas, y <em>utilizar el elemento adecuado
+                        para cada tipo de sección</em>.</p>
+                <p>La parte visual no lo es todo. Utilizarás diferentes fuentes y colores para llamar la atención de los
+                    usuarios sin discapacidad visual de las partes más importantes del contenido, como el menú de
+                    navegación y sus enlaces correspondientes, pero ¿qué ocurre con los usuarios con discapacidad visual
+                    que no pueden distinguir los colores llamativos o el tamaño grande de las fuentes?</p>
+                <div class="notecard note" id="sect1">
+                    <p><strong>Nota:</strong> Los daltónicos representan alrededor del <a
+                            href="http://www.color-blindness.com/2006/04/28/colorblind-population/" class="external"
+                            target="_blank">4% de la población mundial</a> (aproximadamente 1 de cada 12 hombres y 1 de
+                        cada 200 mujeres son daltónicos). Los invidentes y las personas con discapacidad visual
+                        representan aproximadamente el 4-5% de la población mundial (en 2012 había <a
+                            href="https://es.wikipedia.org/wiki/Discapacidad_visual" class="external"
+                            target="_blank">Discapacidad visual</a> 285 millones de personas con alguna de estas
+                        características en el mundo, mientras que el total de la población estaba <a
+                            href="https://es.wikipedia.org/wiki/World_human_population#/media/File:World_population_history.svg"
+                            class="external" target="_blank">alrededor de los 7,000 millones</a>.</p>
+                </div>
+                <p>En tu código HTML puedes crear secciones de contenido basadas en su <em>funcionalidad</em> — puedes
+                    usar elementos que representen sin ambigüedad las diferentes secciones de contenido descritas, de
+                    forma que las tecnologías de accesibilidad y los lectores de pantalla puedan reconocer esos
+                    elementos y asistir en tareas como «encontrar el menú de navegación», o «encontrar el contenido
+                    principal». Como se mencionó anteriormente en el curso, hay una serie de <a
+                        href="/es/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#por_qu%c3%a9_necesitamos_estructura">consecuencias
+                        por no usar la estructura de elementos y semántica adecuada para hacer el trabajo
+                        correctamente</a>.</p>
+                <p>HTML dispone de etiquetas adecuadas que puedes usar para establecer estas secciones semánticas, por
+                    ejemplo:</p>
+                <ul>
+                    <li><strong>encabezado</strong>: <a
+                            href="/es/docs/Web/HTML/Element/header"><code>&lt;header&gt;</code></a>.</li>
+                    <li><strong>menú de navegación</strong> : <a
+                            href="/es/docs/Web/HTML/Element/nav"><code>&lt;nav&gt;</code></a>.</li>
+                    <li><strong>contenido principal</strong>: <a
+                            href="/es/docs/Web/HTML/Element/main"><code>&lt;main&gt;</code></a>, con varias subsecciones
+                        (además de la barra lateral) representadas por los elementos <a
+                            href="/es/docs/Web/HTML/Element/article"><code>&lt;article&gt;</code></a>, <a
+                            href="/es/docs/Web/HTML/Element/section"><code>&lt;section&gt;</code></a>, y <a
+                            href="/es/docs/Web/HTML/Element/div"><code>&lt;div&gt;</code></a>.</li>
+                    <li><strong>barra lateral</strong>: <a
+                            href="/es/docs/Web/HTML/Element/aside"><code>&lt;aside&gt;</code></a>; a menudo colocada
+                        dentro de <a href="/es/docs/Web/HTML/Element/main"><code>&lt;main&gt;</code></a>.</li>
+                    <li><strong>pie de página</strong>: <a
+                            href="/es/docs/Web/HTML/Element/footer"><code>&lt;footer&gt;</code></a>.</li>
+                </ul>
+            </div>
+        </section>
+        
+</main>

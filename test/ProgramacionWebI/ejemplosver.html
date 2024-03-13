@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mi primer sitio web</title>
+    <meta name="description" content="Esta es una descripción de mi sitio web.">
+    <meta name="keywords" content="mi, sitio, web, palabras, clave">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="ejemplox">
+    <header>
+        <h1>Bienvenido a mi sitio web</h1>
+        <nav>
+            <a href="#section1">Sección 1</a> |
+            <a href="#section2">Sección 2</a>
+        </nav>
+    </header>
+    <main>
+        <time datetime="2023-09-24">24 de Septiembre, 2023</time>
+        <br>
+        <progress value="70" max="100">70%</progress>
+        <br>
+        <meter value="2" min="0" max="10">2 out of 10</meter>
+        <br>
+        <details>
+            <summary>Información adicional</summary>
+            <p>Aquí va la información adicional que puede ser mostrada u ocultada.</p>
+        </details>
+        <br>
+        <section id="section1">
+            <h2>Título de la sección 1</h2>
+            <p>Este es un párrafo en la sección 1.</p>
+            <img src="imagen.jpg" alt="Una imagen">
+            <ul>
+                <li>Elemento de lista 1</li>
+                <li>Elemento de lista 2</li>
+            </ul>
+            <table>
+                <tr>
+                    <th>Cabecera 1</th>
+                    <th>Cabecera 2</th>
+                </tr>
+                <tr>
+                    <td>Dato 1</td>
+                    <td>Dato 2</td>
+                </tr>
+            </table>
+        </section>
+        <section id="section2">
+            <h2>Título de la sección 2</h2>
+            <p>Este es un párrafo en la sección 2.</p>
+            <form>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <h2>Simulación de búsqueda</h2>
+
+        <input type="text" id="miBusqueda" onkeyup="miFuncion()">
+        <button onclick="miFuncion()">Buscar</button>
+
+        <p id="miLista">
+            Manzana<br>
+            Banana<br>
+            Cereza<br>
+            Durazno<br>
+            Uva<br>
+        </p>
+
+        <script>
+            function miFuncion() {
+                let input = document.getElementById('miBusqueda');
+                let filter = input.value.toUpperCase();
+                let p = document.getElementById('miLista');
+                let text = p.getElementsByTagName('br');
+
+                for (i = 0; i < text.length; i++) {
+                    let txtValue = text[i].textContent || text[i].innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        text[i].style.display = "";
+                    } else {
+                        text[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+        <style>
+            .imagen {
+                float: left;
+                margin: 0 10px 10px 0;
+            }
+
+
+            .texto {
+                clear: both;
+            }
+
+            #xa {
+                width: 450px;
+            }
+        </style>
+        <div id="xa">
+            <img class="imagen" src="../../img/logo.jpg" alt="Imagen" width="200" height="200">
+
+
+
+            <p>Este es un ejemplo de texto que se envuelve alrededor de una imagen flotante. La imagen se alinea a la
+                izquierda y el texto fluye a su alrededor. Si tienes suficiente texto, verás que se envuelve
+                completamente alrededor de la imagen
+                Este es un ejemplo de texto que se envuelve alrededor de una imagen flotante. La imagen se alinea a la
+                izquierda y el texto fluye a su alrededor. Si tienes suficiente texto, verás que se envuelve
+                completamente alrededor de la imagen
+                Este es un ejemplo de texto que se envuelve alrededor de una imagen flotante. La imagen se alinea a la
+                izquierda y el texto fluye a su alrededor. Si tienes suficiente texto, verás que se envuelve
+                completamente alrededor de la imagen.</p>
+        </div>
+    </main>
+    <footer>
+        <p>Este es el pie de página de mi sitio web.</p>
+    </footer>
+</div>
+</body>
+
+</html>

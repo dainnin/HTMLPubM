@@ -1,0 +1,73 @@
+<style>
+    .headerP {
+        padding: 10px;
+    }
+</style>
+<header class="headerP">
+    <h1><a href="#"> Davinci</a></h1>
+    
+<div class="carrusel-puntos">
+    <button onclick="mostrarImagen(pag.mov(-1))">&#x2190;</button>
+    <span class="punto"></span>
+    <span class="punto"></span>
+    <span class="punto"></span>
+    <button onclick="mostrarImagen(pag.mov(1))">&#x2192;</button>
+  </div>
+    <details class="menu maxSizeCont">
+        <summary>Menu</summary>
+
+        <div>
+            <a href="#clase1">Clase 1</a>
+        </div>
+        <div>
+            <a href="#introHTML">Introducción a HTML.</a>
+        </div>
+        <div>
+            <a class="" href="#tabla">Ejemplo Tabla</a>
+        </div>
+        <div>
+            <a class="" href="#textos">Ejemplos Textos</a>
+        </div>
+        <div>
+            <a href="#test">Pruebas</a>
+        </div>
+        
+        <div>
+            <a href="#cajas">Ejemplos Cajas</a>
+        </div>
+        <div>
+            <a href="#cajas">Ejemplos Cajas</a>
+        </div>
+        <div>
+            <a href="#cajas">Ejemplos Cajas</a>
+        </div>
+        <div>
+            <a href="#cajas">Ejemplos Cajas</a>
+        </div>
+
+    </details>
+    <input onchange="esconder()" type="checkbox" id="menHidden">
+</header>
+
+<link rel="stylesheet" href="https://dainnin.github.io/HTMLPubM/css/LibDainnin2024CSS.css">
+<style>
+        .navHidden{
+     font-size: 18px !important;
+     
+     height: calc(30px);
+     
+ }
+ .navHidden *{
+   
+    margin: 0 auto;
+ }
+ .navHidden details{
+display: none;
+ } 
+ #menHidden{
+    position: absolute;
+    right: 40px;
+    top:10px;
+   
+ }
+</style>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://dainnin.github.io/HTMLPubM/css/principal.css">
+    <style>
+    body *{
+        max-width: 70vw;
+    }
+    body img{
+        max-width: 65vw; 
+        border-radius: 20px;
+    }
+    </style>
+    <script>
+        const neoFetch={
+            text:(a)=>{
+                let elemento=document.createElement('div');
+                fetch(a)
+        .then(response => response.text())
+        .then(data => {
+         
+          elemento.innerHTML =data;
+         
+          
+        })
+       
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+        return elemento
+
+            }
+        }
+       
+        </script>
+</head>
+
+<body >
+    
+    <div style="width: 70%;margin: 10% auto;">
+        <div style="width: 40%;height: 50px;margin: 5% auto;background: rebeccapurple;">
+        </div>
+
+    <span id="prueba">
+    
+    </span>
+    </div>
+</body>
+<script>
+
+     document.getElementById('prueba').appendChild(neoFetch.text('./asd.txt'))
+         
+ 
+    const setCrearte=setInterval(()=>{
+            
+            if(document.getElementById('IntrHTML')===null){
+                console.log(document.getElementById('IntrHTML'))
+               
+             
+        }else{
+            console.log(document.getElementById('IntrHTML'))
+            document.getElementById('IntrHTML').appendChild(neoFetch.text('./componentes/formtBasico.html'))
+            clearInterval(setCrearte)
+        }
+    },1000)
+
+</script>
+</html>
